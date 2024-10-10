@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psovic Construction Company</title>
+    <script
+      src="https://kit.fontawesome.com/e3870bf88a.js
+      crossorigin="
+      anonymous
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/angles-up-down?f=classic&s=solid"
+    />
+    <script src="https://unpkg.com/ionicons@[250px].10-0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Beau+Rivage&family=Poppins:ital,wght@1,400;1,600&family=Trispace:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <!-- Body -->
+  <body class="bg-white relative">
+    <nav
+      class="bg-gray-900 w-full md:pl-[10%] md:pr-[5%] md:py-3 py-4 md:flex md:items-center md:justify-between z-10 fixed top-0"
+    >
+      <div
+        class="flex justify-between items-center md:pl-1 pl-6 md:pr-0 pr-6 md:relative"
+      >
+        <span class="">
+          <a href="index.html">
+            <img
+              src="/photos/logo.png"
+              class="cursor-pointer md:w-[80px] w-[80px] md:ml-0 ml-3"
+              alt="logo"
+            />
+          </a>
+        </span>
+        <!-- <i class="fa-solid fa-bars mt-2 cursor-pointer text-3xl text-[#1D8AEC] mr-6 md:hidden block"
+           onclick="onToggleMenu(this)" name="menu"></i> -->
+        <ion-icon
+          onclick="onToggleMenu(this)"
+          name="menu"
+          class="text-[45px] text-[#FF8C00] mr-2 font-bold cursor-pointer md:hidden block"
+        ></ion-icon>
+      </div>
+
+      <ul
+        class="nav-links md:flex md:items-end md:bg-inherit bg-gray-900 md:static md:z-[1] z-[10] absolute md:min-h-fit min-h-[60vh] left-[-100%] top-[] md:pt-0 pt-14 bg-[] w-[80%] md:w-auto md:py-0 py-4 md:px-0 md:pl-[20%] pl-[5%] ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
+      >
+        <li class="mx-6 md:my-1 md:mt-auto mt-0 relative" id="dropdownBtn">
+          <div
+            class="capitalize text-xl text-[#FF8C00] font-bold hover:text-[#eb5555] duration-300 cursor-pointer"
+            onclick="toggleDropdown()"
+          >
+            About Us
+            <i
+              class="fa-solid fa-chevron-down font-bold text-lg ml-1"
+              id="down"
+            ></i>
+            <i
+              class="fa-solid fa-chevron-up font-bold text-lg ml-1 hidden"
+              id="up"
+            ></i>
+          </div>
+
+          <!-- dropdown -->
+          <div
+            class="rounded bg-gray-900 border border-gray-800 absolute top-[] h-auto w-[200px] py-2 shadow-lg hidden ease-in-out duration-300 text-[#FF8C00]"
+            id="dropdown"
+          >
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="company-overview.html"> Company Overview </a>
+            </div>
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="biodata.html"> Company Bio-Data </a>
+            </div>
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="certificates.html"> Certificates </a>
+            </div>
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="certificates.html"> Company Awards </a>
+            </div>
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="executed-jobs.html"> Executed Jobs </a>
+            </div>
+          </div>
+        </li>
+        <li class="mx-6 md:my-1 my-10">
+          <a
+            class="capitalize text-[#FF8C00] text-xl font-bold hover:text-[#eb5555] duration-300"
+            href="engineering-services.html"
+            >Engineering Services</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-10">
+          <a
+            class="capitalize text-xl text-[#FF8C00] font-bold hover:text-[#eb5555] duration-300"
+            href=""
+            >Recommendations</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-10">
+          <a
+            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+            href="contact.html"
+            ><i class="fa-solid fa-phone"></i> Contact Us</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-10 md:hidden">
+          <a
+            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+            href="#"
+          >
+            Key Personel</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-10 md:hidden">
+          <a
+            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+            href="#"
+            >Procurement Overview</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+
+    <section class="md:mt-24 mt-20 relative">
+      <div class="md:h-[100vh] h-[]"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+        <img
+          src="/photos/IMG-20240726-WA0009.jpg"
+          class="w-full object-cover h-full"
+          alt="project work"
+        />
+      </div>
+
+      <!-- article -->
+      <div class="flex md:flex-row flex-col md:py-12 py-6 md:px-[10%] px-[5%]"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+        <div class="md:w-3/5 w-full"
+        >
+          <h1
+            class="font-bold md:text-5xl text-xl text-[#FF8C00] uppercase tracking-wider"
+          >
+            construction
+          </h1>
+          <p class="md:my-5 my-2 md:text-lg text-base text-gray-800">
+            <strong>PSOVIC OVERFLOWS</strong> brings complex, multi-faceted
+            commercial projects to life. From diverse office environments and
+            dynamic retail spaces to transformative mixed-use redevelopments, we
+            build projects that suit our clients’ specialized business and meet
+            the demands of modern life.
+          </p>
+          <p class="md:my-5 py-2 md:text-lg text-base text-gray-800">
+            We bring creativity, flexibility and a commitment to quality to
+            every project so we can meet your unique goals. Whether your focus
+            is on maximizing your footprint or providing a comfortable and safe
+            working environment, our teams deliver.
+          </p>
+        </div>
+        <div class="md:w-2/5 w-full md:pt-10 pt-5 md:pl-[5%]"
+        >
+          <h1 class="font-bold text-xl uppercase text-gray-800">
+            Key Contacts
+          </h1>
+          <hr class="md:w-[90%] w-full py-[0.5px] mt-3 bg-[#FF8C00]" />
+          <!-- sub-div -->
+          <div class="flex md:flex-row md:py-[] py-4">
+            <div class="w-[30%] md:pt-5 pt-3">
+              <img src="/photos/passport1.jpg" class="w-full" alt="photo" />
+            </div>
+            <div class="w-[70%] pl-5 md:pt-5">
+              <h1 class="text-gray-800 font-bold md:text-xl text-base">
+                Ravi Bidichandani
+              </h1>
+              <p class="text-gray-800 md:text-lg text-base">
+                Corporate Director of Business Development
+              </p>
+              <span class="flex gap-2 md:mt-[] mt-2">
+                <i class="fa-solid fa-phone md:text-xl"></i>
+                <i class="fa-regular fa-envelope md:text-xl"></i>
+              </span>
+            </div>
+          </div>
+          <!-- sub-div 2 -->
+          <div class="flex md:flex-row md:py-1 py-4">
+            <div class="w-[30%] md:pt-5">
+              <img src="/photos/passport2.jpg" class="w-full" alt="photo" />
+            </div>
+            <div class="w-[70%] pl-5 md:pt-5">
+              <h1 class="text-gray-800 font-bold md:text-xl text-base">
+                Susan Brooks
+              </h1>
+              <p class="text-gray-800 md:text-lg text-base">
+                New Work Specialist
+              </p>
+              <span class="flex gap-2 md:mt-[] mt-2">
+                <i class="fa-solid fa-phone md:text-xl"></i>
+                <i class="fa-regular fa-envelope md:text-xl"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="md:py-10 py-5 relative overflow-hidden">
+      <div
+        class="flex md:flex-row flex-col w-full md:w-full bg-gray-800 md:mx-auto md:rounded-lg md:shadow-2xl md:py-[] py-8"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+      >
+        <div class="md:w-1/4 w-full md:py-12 py-8">
+          <h1 class="text-[#FF8C00] font-bold text-4xl text-center">22</h1>
+          <h2
+            class="text-white font-bold text-lg text-center capitalize md:block hidden"
+          >
+            years in the construction
+          </h2>
+          <h3 class="text-white font-bold text-lg text-center md:block hidden">
+            Industry
+          </h3>
+          <h2
+            class="text-white font-bold text-lg text-center mt-3 capitalize block md:hidden"
+          >
+            years in the
+          </h2>
+          <h3 class="text-white font-bold text-lg text-center block md:hidden">
+            Construction Industry
+          </h3>
+          <hr
+            class="md:w-56 w-48 py-[2px] md:mt-3 mt-5 bg-[#FF8C00] mx-auto text-center"
+          />
+        </div>
+        <div class="md:w-1/4 md:py-12 py-8">
+          <h1 class="text-[#FF8C00] font-bold text-4xl text-center">#100M</h1>
+          <h2
+            class="text-white font-bold text-lg text-center capitalize md:block hidden"
+          >
+            Average Annual Revenue
+          </h2>
+          <h3 class="text-white font-bold text-lg text-center md:block hidden">
+            Volume
+          </h3>
+          <h2
+            class="text-white font-bold text-lg text-center capitalize block md:hidden mt-3"
+          >
+            Average Annual
+          </h2>
+          <h3
+            class="text-white font-bold text-lg text-center block md:hidden tracking-widest"
+          >
+            Revenue Volume
+          </h3>
+          <hr class="md:w-56 w-48 py-[2px] md:mt-3 mt-5 bg-[#FF8C00] mx-auto" />
+        </div>
+        <div class="md:w-1/4 md:py-12 py-8">
+          <h1 class="text-[#FF8C00] font-bold text-4xl text-center">100%</h1>
+          <h2 class="text-white font-bold text-lg text-center md:block hidden">
+            Employer Owned – Over 25
+          </h2>
+          <h3 class="text-white font-bold text-lg text-center md:block hidden">
+            Owners Strong
+          </h3>
+          <h2
+            class="text-white font-bold text-lg text-center block md:hidden mt-3"
+          >
+            Employer Owned –
+          </h2>
+          <h3 class="text-white font-bold text-lg text-center block md:hidden">
+            Over 5 Owners Strong
+          </h3>
+          <hr class="md:w-56 w-48 py-[2px] md:mt-3 mt-5 bg-[#FF8C00] mx-auto" />
+        </div>
+        <div class="md:w-1/4 md:py-12 py-8">
+          <h1 class="text-[#FF8C00] font-bold text-4xl text-center">0.65</h1>
+          <h2 class="text-white font-bold text-lg text-center md:mt[] mt-3">
+            2024 Safety Experience
+          </h2>
+          <h3 class="text-white font-bold text-lg text-center">
+            Modification Rate (EMR)
+          </h3>
+          <hr class="md:w-56 w-48 py-[2px] md:mt-3 mt-5 bg-[#FF8C00] mx-auto" />
+        </div>
+      </div>
+      <!--  -->
+     <div class="w-full md:py-6"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+      <h1
+      class="font-bold md:text-4xl text-lg text-gray-800 uppercase md:tracking-wider md:ml-[10%] ml-[10%] md:mt-10 mt-5"
+    >
+      construction Projects
+    </h1>
+    <hr
+      class="md:w-40 w-48 py-[2px] md:mt-3 mt-2 bg-[#FF8C00] md:ml-[10%] ml-[10%]"
+    />
+     </div>
+
+      <!-- projects/photos div -->
+      <div
+        class="flex md:flex-row flex-col md:flex-wrap md:justify-center w-full md:px-0 px-[10%] md:py-10 py-5 md:gap-10"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+      >
+      
+        <div class="md:w-[25%] w-[100%]">
+          <img
+            src="/photos/IMG-20240726-WA0009.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            Residences at Edgebrook <br />
+            Merrimack, NH
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/IMG-20240715-WA0026-2.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            tank for line flushing <br />
+            Indorama, Eleme
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/IMG-20240818-WA0010.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            Engineers at work <br />
+            Indorama, Eleme
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/IMG-20240818-WA0015.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            briefing by experts <br />
+            Indorama, Eleme
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/cropped1.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            pipe cutting operation <br />
+            Indorama, Eleme
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/cropped2.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            underground drilling going on <br />
+            Indorama, Eleme
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/cropped3.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            heavy materials carried by truck <br />
+            Indorama, Eleme
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/cropped4.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            drainage construction on going <br />
+            Indorama, Eleme
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/cropped5.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            tank handling and operations <br />
+            Indorama, Eleme
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/IMG-20240903-WA0000.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            board meeting going on <br />
+            company head office
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/IMG-20240703-WA0016.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            team of engineers <br />
+            company head office
+          </h2>
+        </div>
+        <div class="md:w-[25%] w-[100%] md:py-0 py-3">
+          <img
+            src="/photos/new-cropped.jpg"
+            alt="photo"
+            class="rounded cursor-pointer hover:scale-[105%] image"
+          />
+          <h2
+            class="md:text-gray-800 md:text-lg text-center capitalize font-semibold md:mt-4"
+          >
+            power correction at<br />
+            port harcourt Jetty
+          </h2>
+        </div>
+      </div>
+    </main>
+
+    <article class="w-full md:h-[80vh] h-[60vh] bg-[url(/photos/IMG-20240818-WA0018.jpg)] bg-no-repeat md:bg-cover bg-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+        <div class="h-full w-full bg-[#080808] opacity-[0.8] md:px-0 flex justify-center">
+            <!-- swiper div -->
+      <div class="md:w-4/5 w-full h-full md:py-[2.5%] py-10">
+        <style>
+          
+            /* html,
+          .box-swipe {
+            position: relative;
+            height: 100%;
+          } */
+
+             .body-line {
+              position: relative;
+              height: 100%;
+            }
+
+            .body-line {
+              background: inherit;
+              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              color: #000;
+               margin-top: 10px; 
+              padding: 0;
+               /* height: 500px;  */
+            } 
+
+            swiper-container {
+              width: 100%;
+              height: 100%;
+              /* background-color: red; */
+            }
+
+            swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              background: inherit;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+
+            swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          
+        </style>
+
+        <div class="body-line">
+          <!-- <div class="box-swipe"> -->
+
+          <swiper-container
+            class="mySwiper"
+            
+          >
+            <swiper-slide>
+              <h1
+                class="text-[#FF8C00] md:text-5xl text-3xl text-center font-sans font-bold leading-10 tracking-wide capitalize"
+              >
+              what we do
+              </h1>
+              <p
+                class="text-center mx-[10%] mt-10 font-semibold font-sans md:text-xl text-base text-white"
+              >At 
+                <span class="text-[#FF8C00]"
+                  >PSOVIC OVERFLOWS INT'L (NIG.) LTD </span
+                >, we develope supply management initiatives that directly impacts your bottom line. The result; 
+                significant reduction in total cost of ownership from reduced material components and service costs 
+                --- and improved processes as well.
+              </p>
+            </swiper-slide>
+            <swiper-slide>
+              <h1
+                class="text-[#FF8C00] md:text-5xl text-3xl font-sans font-bold leading-10 tracking-wide capitalize"
+              >
+                how we help your <br> business grow
+              </h1>
+              <p
+                class="text-center mx-[10%] mt-10 font-semibold font-sans md:text-xl text-base text-white"
+              >At 
+                <span class="text-[#FF8C00]"
+                  >PSOVIC OVERFLOWS INT'L (NIG.) LTD </span
+                >we bring a new emphasis to your supply management system. A procurement consultant 
+                review, analysis and compares your existing practices to industry standard. then, we train your
+                employees in current best practices for long-term sustainable supply management improvement.
+                
+              </p>
+            </swiper-slide>
+            <swiper-slide>
+                <h1
+                class="text-[#FF8C00] md:text-5xl text-3xl font-sans font-bold leading-10 tracking-wide capitalize"
+              >
+                our services
+              </h1>
+              <p
+                class="text-center mx-[10%] mt-10 font-semibold font-sans md:text-xl text-base text-white"
+              >At 
+                <span class="text-[#FF8C00]"
+                  >PSOVIC OVERFLOWS INT'L (NIG.) LTD </span
+                >, we have diverse experience in high level procurement, sub-contracting, job shop and services operations.
+                with a wide client based, purchasing management, global sourcing, material and service cost reduction, 
+                supply management consulting, purchasing training and complex foreign and domestic agreement negotiation 
+                --- we are experienced in all of them.
+
+              </p>
+            </swiper-slide>
+            <swiper-slide>
+                <h1
+                class="text-[#FF8C00] md:text-5xl text-3xl font-sans font-bold leading-10 tracking-wide capitalize"
+              >
+                our engineers
+              </h1>
+              <p
+                class="text-center mx-[10%] mt-10 font-semibold font-sans md:text-xl text-base text-white"
+              >
+                Our experienced staff has diverse technical and management skills. We develop, administer and control construction
+                projects for public agencies. Our particular knowledge of construction claims and the many factors that can foster
+                construction disputes provides our unique insights into the development and management of construction programs.
+              </p>
+            </swiper-slide>
+            <swiper-slide>
+              <h1
+                class="text-[#FF8C00] md:text-5xl text-3xl capitalize font-sans font-bold leading-10 tracking-wide mt-2"
+              >
+                our mission <br />
+                statement
+              </h1>
+              <p
+                class="text-center mx-[10%] mt-10 font-semibold font-sans md:text-xl text-base text-white"
+              >
+                <span class="text-[#FF8C00]"
+                  >PSOVIC OVERFLOWS INT'L (NIG.) LTD </span
+                >is a unique construction management company and consulting firm serving the construction industry
+                offering responsive, cost-effective, quality, construction management services for complex projects
+                and resolution of construction disputes. By utilizing our unique skill set and proactive approach, it 
+                is our mission to help each client with their construction project management from conception to completion.
+              </p>
+            </swiper-slide>
+          </swiper-container>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+          <script>
+            const swiperEl = document.querySelector(".mySwiper");
+            Object.assign(swiperEl, {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              navigation: true,
+              speed: 1000,
+              pagination: true,
+              // pagination: {
+              //   clickable: false,
+              // },
+              
+              scrollbar: {
+                el: "swipeEl-scrollbar",
+                draggable: true,
+                style: {
+                    backgroundColor: "#fff",
+                    color: "#fff",
+                },
+              },
+
+
+              breakpoints: {
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+                1024: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+              },
+            });
+            swiperEl.initialize();
+          </script>
+        </div>
+
+    </article>
+
+    <article class="bg-white md:py-10 py-5 md:px-[10%] px-[5%] relative overflow-hidden">
+        <div class="flex flex-row">
+            <div class="w-1/2 md:py-4 py-2"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <h2 class="md:text-xl font-semibold">News / Insights</h2>
+                <h1 class="md:text-4xl text-lg font-bold uppercase text-gray-700 md:my-4 py-2">Read the Latest from PSOVIC</h1>
+                <hr
+        class="md:w-40 w-24 py-[2px] md:my-0 my-2 bg-[#FF8C00] "
+      />
+            </div>
+            <div class="w-1/2 md:py-4 flex items-center justify-end "
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <h3 class="md:text-xl font-semibold mr-2 cursor-pointer hover:text-gray-600 duration-300 ease-in-out">View All</h3>
+            <i class="fa-solid fa-arrow-right text-[#FF8C00] text-xl hover:text-black hover:ml-4 duration-500 ease-in-out cursor-pointer"></i>
+            </div>
+        </div>
+        <div class="md:py-10 flex md:flex-row flex-wrap md:gap-14 relative">
+            <div class="md:w-[30%] flex justify-center flex-col md:mt-0 mt-3"
+            data-aos="flip-up"
+            data-aos-duration="1800"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/looking-engr.jpg" alt="" class="rounded cursor-pointer hover:scale-[110%] image">
+                <a href="" class="text-center my-3 md:text-lg font-semibold">Staff and Engineers during briefing</a>
+            </div>
+            <div class="md:w-[30%] flex justify-center flex-col md:mt-0 mt-3"
+            data-aos="zoom-in"
+            data-aos-duration="1800"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/IMG-20240703-WA0017.jpg" alt="" class="rounded cursor-pointer hover:scale-[110%] image">
+                <a href="" class="text-center my-3 md:text-lg font-semibold">Board of senior engineers</a>
+            </div>
+            <div class="md:w-[30%] flex justify-center flex-col md:mt-0 mt-3"
+            data-aos="flip-up"
+            data-aos-duration="1800"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/IMG-20240818-WA0018.jpg" alt="" class="rounded cursor-pointer hover:scale-[110%] image">
+                <a href="" class="text-center my-3 md:text-lg font-semibold">Staff and Engineers during briefing</a>
+
+            </div>
+        </div>
+    </article>
+    <div class="md:h-6 h-4 w-full bg-[#FF8C00]"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"></div>
+    <!-- go top button -->
+    <button
+      class="go-top-btn fixed md:right-[20px] right-4 md:bottom-[30px] hidden z-10 bottom-5 bg-[#ff8c00] md:w-[40px] w-[30px] md:h-[40px] h-[30px] rounded-full items-center justify-center animate-bounce"
+      onclick="topBtn()"
+    >
+      <i class="fa-solid fa-arrow-up cursor-pointer text-2xl text-black"></i>
+    </button>
+
+    <!-- footer -->
+    <footer class="w-full bg-gray-900 flex flex-col md:py-7 overflow-hidden"> 
+      <div class="md:w-full md:py-5 py-5 md:pl-[10%] pl-[5%] flex md:flex-row flex-col 
+      md:items-center md:gap-8 gap-[] relative"
+                data-aos="zoom-in"
+                data-aos-duration="1800"
+                data-aos-easing="ease-in-out">
+        <h2 class="md:text-xl text-base font-semibold text-white">BUILDING STRONGER,<span class="text-[#FF8C00]"> TOGETHER.</span></h2>
+      <ul class="flex md:flex-row flex-col text-white md:gap-4 gap-3 md:text-xl
+       text-sm font-semibold md:mx-8 md:mt-0 mt-3">
+        <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">ABOUT US</a></li>
+        <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">CONTRACTS</a></li>
+        <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">AWARDS</a></li>
+        <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">EXPERTISE</a></li>
+        <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">REGIONS</a></li>
+      </ul>
+      <span class="flex flex-row gap-4 md:mt-0 mt-3">
+        <i class="fa-brands fa-square-x-twitter text-white md:text-2xl text-lg cursor-pointer hover:text-[#ff8c00] duration-300 ease-in-out"><a href="#"></a></i>
+      <i class="fa-brands fa-linkedin text-white md:text-2xl text-lg cursor-pointer hover:text-[#ff8c00] duration-300 ease-in-out"><a href="#"></a></i>
+      <i class="fa-brands fa-facebook text-white md:text-2xl text-lg cursor-pointer hover:text-[#ff8c00] duration-300 ease-in-out"><a href="#"></a></i>
+      <i class="fa-brands fa-whatsapp text-white md:text-2xl text-lg cursor-pointer hover:text-[#ff8c00] duration-300 ease-in-out"><a href="#"></a></i>
+      </span>
+      </div>
+    
+    
+      <div class="w-full flex md:flex-row flex-col">
+        <div class="md:w-2/5 flex-col md:pl-[10%] pl-[5%] md:py-[] py-4 text-white"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out">
+          <h1 class="underline font-bold md:text-lg text-base text-left text-[#ff8c00]">Office Address</h1>
+    
+          <span class="flex flex-row gap-6">
+          <ul class=" md:text-base text-sm">
+            <li>#1 Princeley Chujor Street</li>
+            <li>Obo -- Nwanke</li>
+            <li>Ogale -- Eleme</li>
+            <li>Rivers State</li>
+          </ul>
+          <ul class="md:text-base text-sm">
+            <li>#222, Avalon Haven Drive</li>
+            <li>North Haven</li>
+            <li>CTO6473, USA</li>
+          </ul>
+          </span>
+          <ul class="md:mt-6 mt-4 md:text-base text-sm ">
+            <li>#216c Mbiama/Yenegoa Road</li>
+            <li>Beside NDDC office</li>
+            <li>Yenegoa,</li>
+            <li>Bayelsa State.</li>
+          </ul>
+          
+        </div>
+        <div class="md:w-[30%] text-white md:pt-7 pt-5 md:pl-[] pl-[5%]"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out">
+          <p class="md:text-base text-sm">
+            <strong class="text-[#ff8c00]">Tel:</strong> &nbsp;08156879909, &nbsp; 08036703567, &nbsp; 08116504555, <br>
+            <span class="md:ml-9 ml-8">07031126539, &nbsp; 08162442340.</span>
+          </p>
+          <p class="md:text-base text-sm md:mt-6 mt-4">
+            <strong class="text-[#ff8c00]">Email:</strong> &nbsp;psovic2001@yahoo.com <br>
+            <span class="md:ml-12 ml-10">&nbsp;vbarinua@yahoo.com</span>
+          </p>
+        </div>
+        <div class="md:w-[30%] md:pl-[] pl-[10%] md:py-7 py-4"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out">
+          <ul class="text-white">
+            <li class="list-disc underline hover:text-[#ff8c00] duration-200 ease-in-out my-2"><a href="">Recommendations</a></li>
+            <li class="list-disc underline hover:text-[#ff8c00] duration-200 ease-in-out my-2"><a href="">Engineering Services</a></li>
+            <li class="list-disc underline hover:text-[#ff8c00] duration-200 ease-in-out my-2"><a href="">Jobs | Photos</a></li>
+            <li class="list-disc underline hover:text-[#ff8c00] duration-200 ease-in-out my-2"><a href="">Clients Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

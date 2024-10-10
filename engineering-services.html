@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psovic Construction Company</title>
+    <script
+      src="https://kit.fontawesome.com/e3870bf88a.js
+      crossorigin="
+      anonymous
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/angles-up-down?f=classic&s=solid"
+    />
+    <script src="https://unpkg.com/ionicons@[250px].10-0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Beau+Rivage&family=Poppins:ital,wght@1,400;1,600&family=Trispace:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <!-- Body -->
+  <body class="bg-white relative">
+    <nav
+      class="bg-gray-900 w-full md:pl-[10%] md:pr-[5%] md:py-3 py-4 md:flex md:items-center md:justify-between z-10 fixed top-0"
+    >
+      <div
+        class="flex justify-between items-center md:pl-1 pl-6 md:pr-0 pr-6 md:relative"
+      >
+        <span class="">
+          <a href="index.html">
+            <img
+              src="/photos/logo.png"
+              class="cursor-pointer md:w-[80px] w-[80px] md:ml-0 ml-3"
+              alt="logo"
+            />
+          </a>
+        </span>
+        <!-- <i class="fa-solid fa-bars mt-2 cursor-pointer text-3xl text-[#1D8AEC] mr-6 md:hidden block"
+           onclick="onToggleMenu(this)" name="menu"></i> -->
+        <ion-icon
+          onclick="onToggleMenu(this)"
+          name="menu"
+          class="text-[45px] text-[#FF8C00] mr-2 font-bold cursor-pointer md:hidden block"
+        ></ion-icon>
+      </div>
+
+      <ul
+        class="nav-links md:flex md:items-end md:bg-inherit bg-gray-900 md:static md:z-[1] z-[10] absolute md:min-h-fit min-h-[60vh] left-[-100%] top-[] md:pt-0 pt-14 bg-[] w-[80%] md:w-auto md:py-0 py-4 md:px-0 md:pl-[20%] pl-[5%] ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
+      >
+        <li class="mx-6 md:my-1 md:mt-auto mt-0 relative" id="dropdownBtn">
+          <div
+            class="capitalize text-xl text-[#FF8C00] font-bold hover:text-[#eb5555] duration-300 cursor-pointer"
+            onclick="toggleDropdown()"
+          >
+            About Us
+            <i
+              class="fa-solid fa-chevron-down font-bold text-lg ml-1"
+              id="down"
+            ></i>
+            <i
+              class="fa-solid fa-chevron-up font-bold text-lg ml-1 hidden"
+              id="up"
+            ></i>
+          </div>
+
+          <!-- dropdown -->
+          <div
+            class="rounded bg-gray-900 border border-gray-800 absolute top-[] h-auto w-[200px] py-2 shadow-lg hidden ease-in-out duration-300 text-[#FF8C00]"
+            id="dropdown"
+          >
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="company-overview.html"> Company Overview </a>
+            </div>
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="biodata.html"> Company Bio-Data </a>
+            </div>
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="certificates.html"> Certificates </a>
+            </div>
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="certificates.html"> Company Awards </a>
+            </div>
+            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+              <a href="executed-jobs.html"> Executed Jobs </a>
+            </div>
+          </div>
+        </li>
+        <li class="mx-6 md:my-1 my-10">
+          <a
+            class="capitalize text-[#FF8C00] text-xl font-bold hover:text-[#eb5555] duration-300"
+            href="engineering-services.html"
+            >Engineering Services</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-10">
+          <a
+            class="capitalize text-xl text-[#FF8C00] font-bold hover:text-[#eb5555] duration-300"
+            href=""
+            >Recommendations</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-10">
+          <a
+            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+            href="contact.html"
+            ><i class="fa-solid fa-phone"></i> Contact Us</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-10 md:hidden">
+          <a
+            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+            href="#"
+          >
+            Key Personel</a
+          >
+        </li>
+        <li class="mx-6 md:my-1 my-10 md:hidden">
+          <a
+            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+            href="#"
+            >Procurement Overview</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+
+    <section class="w-full md:pt-20 pt-28 relative overflow-hidden">
+      <!-- 1st div -->
+      <div
+        class="md:h-[90vh] h-[25vh] w-full bg-[url(/photos/looking-engr2.jpg)] bg-no-repeat md:bg-cover bg-contain"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+      ></div>
+
+      <div class="flex md:mt-20 mt-8 md:flex-row flex-col w-full md:px-[10%] px-[5%] relative">
+        <div class="md:w-1/2 w-full md:py-6 md:pr-16"
+                data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out">
+          <h1 class="md:text-4xl text-xl font-semibold text-[#FF8C00] capitalize">
+            our engineering services overview
+          </h1>
+          <p class="md:mt-4 mt-3 text-justify md:text-lg text-base">
+            <strong>Mechanical and Civil Engineering</strong> <br />
+            From its inception,
+            <strong>PSOVIC OVERFLOWS INTL (NIG.) LTD</strong> has been
+            undertaking various mechanical and civil engineering contracts
+            including projects like the fabrication and installationlerection of
+            steel/composite structure such as steel bridges, tanks, barge
+            repairs, replacement and burial of gas/oil flow lines, the
+            construction of office buildings, road etc. We are also
+            Anti-corrosion contracts and have carried out jobs in Sandblasting
+            and coating, valve repairs, cathodic protection, Procurement,
+            installation, reconditioning and other related jobs in the Oil and
+            Gas sector and steel industries.
+          </p>
+          <p class="md:mt-4 text-justify md:text-lg text-base">
+            <strong>Equipment Leasing</strong> <br />
+            We lease dredgers, Welding Machines (Electric and Diesel Powered),
+            vehicles (buses and four-wheel drive), self-Hoader, trucks, barges,
+            tugboats, cranes and pay loaders.
+          </p>
+        </div>
+        <div class="md:w-1/2 w-full"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+          <img
+            src="/photos/IMG-20240828-WA0004.jpg"
+            alt="site photo"
+            class="md:max-h-[80vh] w-full"
+          />
+        </div>
+      </div>
+
+      <!-- 2nd div -->
+      <div class="flex md:mt-20 md:flex-row flex-col-reverse w-full md:px-[10%] px-[5%] relative ">
+        <div class="md:w-1/2 w-full md:py-0 py-6 "
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+          <img
+            src="/photos/IMG-20240726-WA0015.jpg"
+            alt="engineering briefing"
+            class="md:max-h-[80vh] w-full"
+          />
+        </div>
+        <div class="md:w-1/2 w-full md:pl-16 md:pt-0 pt-8 "
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+          <p class="md:mt-12 text-justify md:text-lg text-base">
+            <strong>Engineering/Design Services</strong><br> PSOVIC OVERFLOWS INTL (NIG.) LTD offers
+            more than what is traditionally expected from an outside engineering
+            firm. Clients have access to a full range of engineering services as
+            well as design services and construction Management.
+            <ul class="md:ml-8 ml-8 md:text-lg text-base">
+                <li class="list-disc">AutoCAD and drafting services</li>
+                <li class="list-disc">Emergencylafter-hours response</li>
+                <li class="list-disc">System reconfiguration and upgrade</li>
+                <li class="list-disc">Material management</li>
+                <li class="list-disc">Inspections services</li>
+                <li class="list-disc">Pre-design and budget reviews</li>
+                <li class="list-disc">Engineer-Procure-construct contracts
+                </li>
+            </ul>
+          </p>
+          <p class="md:mt-4 text-justify md:text-lg text-base">
+            From a project's inception phase to completion, clients count on PSOVIC OVERFLOWS
+            INTL (NIG.) LTD expertise to reduce their construction time and help them ealize some
+            of their goals - completing more projects, improving the bottom line and offering their
+            customers unrivaled services.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- div for ad -->
+       <div class="md:mt-8 mt-6 flex md:flex-row flex-col bg-gray-900 md:px-[10%] px-[5%] w-full"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+        <div class="md:w-1/2 w-full md:py-12 py-6 md:pr-7">
+            <h1 class="text-white md:text-4xl text-lg font-bold uppercase">Our Core Services</h1>
+            <hr
+        class="md:w-40 w-20 py-[2px] md:mt-3 mt-1 bg-[#FF8C00] rounded-md"
+      />
+            <p class="md:my-4 my-3 text-justify md:text-lg text-white">
+                PSOVIC OVERFLOWS INTL (NIG.) LTD has been able to engage in and provide Project
+                Management services and also develop expertise in areas previously outside its core
+                expertise.
+            </p>
+        </div>
+        <div class="md:w-1/2 w-full md:py-12 py-6 flex md:flex-wrap md:flex-row flex-col md:px-0 px-[5%] relative overflow-hidden">
+            <div class="md:w-1/2 py-4 flex flex-col items-center justify-center bg-gray-800 md:border-2 border-y-[3px] border-gray-900"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/builders.png" alt="engineers" class="max-w-[100px]">
+                <h1 class="text-[#FF8C00] font-semibold md:text-xl uppercase">People First</h1>
+                <p class="text-center text-white">A culture of safety, diversity, equity, inclusion and personal development.</p>
+            </div>
+            <div class="md:w-1/2 py-4 flex flex-col items-center justify-center bg-gray-800 md:border-2 border-y-[3px] border-gray-900"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/hand2.png" alt="engineers" class="max-w-[100px]">
+                <h1 class="text-[#FF8C00] font-semibold md:text-xl uppercase">Take Ownership</h1>
+                <p class="text-center text-white">Be accountable. Follow through.</p>
+            </div>
+            <div class="md:w-1/2 py-4 flex flex-col items-center justify-center bg-gray-800 md:border-2 border-y-[3px] border-gray-900"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/medal2.png" alt="engineers" class="max-w-[100px]">
+                <h1 class="text-[#FF8C00] font-semibold md:text-xl uppercase">Deliver Excellence</h1>
+                <p class="text-center text-white">Execute with purpose and urgency.</p>
+            </div>
+            <div class="md:w-1/2 py-4 flex flex-col items-center justify-center bg-gray-800 md:border-2 border-y-[3px] border-gray-900 md:px-2"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/17239297.png" alt="engineers" class="max-w-[100px]">
+                <h1 class="text-[#FF8C00] font-semibold md:text-xl uppercase md:my-">Smart Growth</h1>
+                <p class="text-center text-white">Shareholder value, reputation and trusting relationships.</p>
+            </div>
+        </div>
+       </div>
+
+       <!-- picture div -->
+        <div class="md:h-[80vh] h-[50vh] w-full bg-[url(/photos/edit.jpg)] bg-no-repeat bg-center bg-cover"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+            <div class="w-full h-full bg-black opacity-[0.8] flex justify-center items-center">
+                <h1 class="text-[#FF8C00] md:text-4xl text-xl font-bold uppercase text-center border-2
+                 border-[#FF8C00] md:py-4 py-2 px-2 rounded-tl-3xl rounded-br-3xl"><span class="tracking-widest md:text-5xl text-2xl">our construction</span> <br>services overview</h1>
+            </div>
+        </div>
+
+        <div class="flex md:flex-row flex-col w-full md:py-20 py-16 md:px-[10%] px-[5%] relative overflow-hidden">
+            <div class="md:w-1/2 w-full"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/IMG-20240726-WA0018.jpg" class="md:max-h-[600px] md:w-full" alt="">
+            </div>
+            <div class="md:w-1/2 w-full md:pl-[5%] md:pt-12 pt-6"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <hr
+                class="md:w-40 w-20 py-[2px] md:mt-3 mt-1 bg-[#FF8C00] rounded-md"
+              />
+              <p class="md:mt-4 mt-3 text-justify md:text-lg text-base">
+                <strong>PSOVIC OVERFLOWS INTL (NIG.) LTD</strong> has been able to engage in and provide Project
+                Management services and also develop expertise in areas previously outside its core
+                expertise. These areas include: <br>
+                <strong>
+                MECHANICAL FABRICATION
+                </strong>
+                <ul class="md:ml-8 ml-8 md:text-lg">
+                    <li class="list-disc">Design and Construction of structures</li>
+                    <li class="list-disc">Facilities maintenance</li>
+                    <li class="list-disc">Welding, Fabrication/installation of Flow stations</li>
+                    <li class="list-disc">Replacement of piping sections in flow station process piping</li>
+                    <li class="list-disc">Fabrication and erections of Tank</li>
+                    <li class="list-disc">Steel structure and associated works</li>
+                    <li class="list-disc">Insulation and Corrosion Control</li>
+                    <li class="list-disc">Machinery/Equipment erection</li>
+                    <li class="list-disc">Welding and fabrication.</li>
+                    </ul>
+                <strong class="font-bold">CORROSION CONTROL</strong>
+                <ul class="md:ml-8 ml-8 md:text-lg">
+                    <li class="list-disc">Pipeline coating</li>
+                    <li class="list-disc">Sandblasting and painting</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+            <!-- 3rd div -->
+        <div class="w-full md:px-[10%] px-[5%] flex md:flex-row flex-col-reverse relative overflow-hidden">
+            <div class="md:w-1/2 w-full md:py-12 py-6 md:pr-10"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <hr
+                class="md:w-40 w-20 py-[2px] md:mt-3 mt-4 bg-[#FF8C00] rounded-md"
+              />
+                <p class="text-justify md:text-lg text-base mt-4">
+                    <strong>PIPELINE/FLOWLINES/CONSTRUCTION MAINTENANCE</strong> <br>
+                    <ul class="md:ml-8 ml-8 md:text-lg">
+                        <li class="list-disc">Construction of New pipelines</li>
+                        <li class="list-disc">Flow line construction/hook up</li>
+                        <li class="list-disc">Pipeline maintenance/replacement</li>
+                        <li class="list-disc">Replacement of piping sections in flow station process piping</li>
+                        <li class="list-disc">Wellhead fabrication/installation</li>
+                        </ul>
+                    <strong>WELLHEAD NALVEMWELL SERVICES</strong> <br>
+                    <ul class="md:ml-8 ml-8 md:text-lg">
+                        <li class="list-disc">Wellhead/Valve maintenance</li>
+                        <li class="list-disc">Well completion</li>
+                        <li class="list-disc">Installation of surface Nellhead Equipment</li>
+                        <li class="list-disc">Testing the annulus of tubing head</li>
+                        <li class="list-disc">First and Second line welhead maintenance</li>
+                        <li class="list-disc">Setting Back Pressure valve (BPV or NRV)</li>
+                        <li class="list-disc">Replacement of Leaking gate and seats.</li>
+                        <li class="list-disc">Repairs and maintenance of Ligament valve.</li>
+                        </ul>
+                </p>
+            </div>
+            <div class="md:w-1/2 w-full md:py-8"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/IMG-20240818-WA0018.jpg" class="" alt="engineers">
+            </div>
+        </div>
+
+            <!-- 4th div -->
+
+        <div class="flex md:flex-row flex-col md:py-12 md:px-[10%] px-[5%] w-full relative overflow-hidden">
+            <div class="md:w-1/2 w-full md:py-5 py-3"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/IMG-20240903-WA0003.jpg" class="" alt="">
+            </div>
+            <div class="md:w-1/2 w-full md:pl-[5%] md:py-0 py-6"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <hr
+                class="md:w-40 w-20 py-[2px] md:mt-3 mt-4 bg-[#FF8C00] rounded-md"
+              />
+              <h1 class="mt-3 md:text-xl text-base font-bold uppercase">
+                our construction services <br> overview
+              </h1>
+              <p class="text-justify md:text-lg text-base mt-4">
+                PSOVIC OVERFLOWS INTL (NIG.) LTD provides management and supervision through
+                Our extensive experience on projects nation-wide, from Port Harcourt to Abuja and Lagos to
+                Bauchi. We provide experienced in-house tradesmen on all our projects for scopes of work
+                Such as framing, erection and all types of interior finishes, ensuring that our fit and finish is
+                second to none. <br>
+                <strong>Construction Management Services</strong> <br>
+                PSOVIC OVERFLOVWs INTL (NIG.) LTD provides a single source for total construction
+                management services. Whether the project calls for a construction manager, PSOVIC
+                OVERFLOWS INTL (NIG.) LTD has the people, facilities and expertise to meet every need.
+                No matter how challenging the project, we'll take the construction process easy. You'll have
+                an experienced, professional team on your side, from start to finish: making sure
+                workmanship, materials and service meet your standards.
+              </p>
+            </div>
+        </div>
+
+            <!-- 5th div -->
+        <div class="w-full flex md:flex-row flex-col-reverse md:px-[10%] px-[5%] relative overflow-hidden">
+            <div class="md:w-1/2 w-full md:py-10 py-6 md:pr-10"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <hr
+                class="md:w-40 w-20 py-[2px] md:mt-3 mt-4 bg-[#FF8C00] rounded-md"
+              />
+              <p class="text-justify md:text-lg text-base mt-4">
+                <strong>Design-Build Services</strong> <br>
+                Our design-build services combine architecture, engineering and construction services in
+                one contract. We take sole responsibility for your project, using our in-house architectural
+                capabilities and partnering with selected engineers to create the optimal design solution.
+                We bring together the diverse experts needed for every facet of the project, from design to
+                supervision and record-keeping, and safety to compliance, all under one roof. The result: A
+                unified team of experienced people, all focused on the same objectives.
+                We assume the risks you'd rather delegate: managing the design process, controlling the
+                cost and schedule, and insuring against delays. Once we work with you to clearly define the
+                project's scope, we take it from there in partnership with you. <br>
+                The PSOVIC OVERFLOWS INTL (NIG,) LTD Design-Build Team looks beyond design and
+                construction to provide centralized responsibility for a streamlined, successful process and
+                project.
+              </p>
+            </div>
+            <div class="md:w-1/2 w-full flex items-center"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/pvsvio collage.png" class="" alt="">
+            </div>
+        </div>
+
+        <!-- 6th div -->
+         <di class="w-full flex md:flex-row flex-col md:px-[10%] px-[5%] relative overflow-hidden">
+            <div class="md:w-1/2 w-full md:py-12 py-6"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <img src="/photos/new-cropped.jpg" class="" alt="">
+            </div>
+            <div class="md:w-1/2 w-full md:pl-[5%] md:py-8 py-6"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+                <hr
+                class="md:w-40 w-20 py-[2px] md:mt-3 mt-4 bg-[#FF8C00] rounded-md"
+              />
+                <p class="text-justify md:text-lg text-base mt-4">
+                    <strong>Architectural Services</strong> <br>
+                    An interdisciplinary team for steady progress.
+                    We provide traditional architectural services to those select clientele that are not only
+                    looking for design excellence, but value the insight, experience and knowledge brought to
+                    the table by an experienced Contractor. At PSOVIC OVERFLOWS INTL (NIG) LTD, we
+                    combine the benefits of good design and good design value, into all of our work
+                    PSOVIC OVERFLOWS INTL (MG.) LTD was founded with a mission to meet the
+                    increasing demand for responsive, cost-effective, quality, construction management
+                    services for complex projects and resolution of construction disputes. Our construction
+                    project management company has extensive experience in the construction industry
+                    including engineering, project management, scheduling and claims avoidance.
+                    We utilize our insight on behalf of our clients to proactively prevent factors that result in
+                    change orders, budget overruns, delays, scheduling problems and design errors during
+                    construction.
+                </p>
+            </div>
+         </div>
+         </di>
+      
+         <!-- table div -->
+         <div class="md:flex md:justify-center md:pt-10 pt-6 pb-0 md:my-8 my-6 overflow-x-auto overflow-y-hidde whitespace-nowrap
+         md:mx-[10%] mx-[5%]  border-2 border-gray-500"
+         data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+         <table class="md:border-collapse md:w-[100%] w-[200%] border-2 border-gray-900 p-2 text-black bg-gray-400"
+            >
+           <caption class="md:text-2xl text-lg font-bold uppercase md:text-center text-left md:ml-0 ml-4">SOME EXECUTED JOBS</caption>
+           <thead>
+             <tr>
+               <th class="border-2 border-gray-900 p-3 md:text-center text-left uppercase">description</th>
+               <th class="border-2 border-gray-900 p-3 md:text-center text-left uppercase">client</th>
+               <th class="border-2 border-gray-900 p-3 md:text-center text-left uppercase">remarks</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr class="capitalize">
+               <td class="p-3 text-left border-2 border-gray-900 capitalize">mechanical cleaning of internal / external of train 1-6.</td>
+               <td class="p-3 border-2 border-gray-900 uppercase text-left">ots / nlng bonny island</td>
+               <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+             </tr>
+             <tr class="capitalize">
+               <td class="p-3 text-left border-2 border-gray-900 capitalize">Confine space entry and fixing of trays in the exchangers columns, boilers etc.</td>
+               <td class="p-3 border-2 border-gray-900 uppercase text-left">ots / nlng bonny</td>
+               <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+             </tr>
+             <tr class="capitalize">
+               <td class="p-3 text-left border-2 border-gray-900 capitalize">cleaning of gas and chemical storage tanks etc.</td>
+               <td class="p-3 border-2 border-gray-900 uppercase text-left">nlng bonny island</td>
+               <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+             </tr>
+             <tr class="capitalize">
+                 <td class="p-3 text-left border-2 border-gray-900 capitalize">hydro flushing & cleaning of H <sub>2</sub>0 treatment plant and cooling towers.</td>
+                    <td class="p-3 border-2 border-gray-900 uppercase text-left">nlng bonny island</td>
+                    <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+                </tr>
+
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">bolt tensioning / calibration</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">ots / nlng bonny</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>
+            <tr class="capitalize">
+              <td class="p-3 text-left border-2 border-gray-900 capitalize">man power supply. <br>
+                <ul class="md:ml-8">
+                    <li class="list-disc">mechanical cleaner</li>
+                    <li class="list-disc">confine space entry</li>
+                </ul>
+            </td>
+              <td class="p-3 border-2 border-gray-900 uppercase text-left">nlng / ots bonny</td>
+              <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+                </tr>
+                
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">procurement of various materials</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">nlng bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>    
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">procurement of various materials</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">tskj nig. ltd bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>    
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">hiring of pumping machines and compressors</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">tskj nig. ltd bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr> 
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">procurement of various materials</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">cb&i bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">construction of 40 man dormitory</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">cb&i bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">construction of concrete slabs</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">cb&i bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">construction of temporary bridge</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">cb&i bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">renovation of workers camp</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">cb&i bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">construction of culverts / drainages</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">cb&i bonny island</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">procurement of various materials</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">julius berger plc.</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">construction of cable tiles</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">julius berger plc.</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">construction & electrification job</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">rivers state government</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">supply of christmas rice (1500 bags)</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">rivers state government</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">evacuation / transportation of sludge at burn bit at iepcl to incenerating plant</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">removal / cataway of scraps, etc. at old scrap yard. iepcl (opposite workshop)</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">clearing / preparation of the field with red mud, equipment and planting grasss</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">construct and laying of keb stones opposite workshop</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">cleaning of contaminated bits at olefins</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">cleaning of retention pond with swamp buggy etc.</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">maintenance of water chamber at fire and safety</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">cleaning of contaminated soil</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+              </tr>     
+            </tr>     
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">evacuation of hydrocarbon waste to treatment plant & amorica plant</td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+            </tr>   
+            <tr class="capitalize">
+                <td class="p-3 text-left border-2 border-gray-900 capitalize">construction of water champers at reduction and fertilizer plant </td>
+                <td class="p-3 border-2 border-gray-900 uppercase text-left">indorama petro-chemical complex, eleme</td>
+                <td class="p-3 border-2 border-gray-900 text-left capitalize">completed</td>
+            </tr>   
+            </tbody>
+        </table>
+        </div>
+    </section>
+    <article class="w-full md:h-[125vh] bg-[url(/photos/dark.jpg)] bg-no-repeat bg-center bg-cover"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+        <div class="w-full h-full md:py-8 py-4 md:px-[10%] px-[5%] bg-[#000] opacity-[0.8]">
+            <h1 class="text-[#FF8C00] md:text-3xl text-lg font-bold uppercase">OUR DREDGING SERVICES OVERVIEW</h1>
+            <p class="text-white text-justify md:text-lg text-base mt-4">
+                Introduction to Dredging
+                In a few words, dredging is essentially the underwater removal of sand, soil or silt and its
+                movement from one place to another for purposes of deepening or making use of the
+                removal material.
+                Over the years, dredging has made a significant contribution to the development of many
+                world economics. Construction and of harbors, canals, and waterways have all directly
+                benefited from the dredging industry. Additionaly, dredging is key in coastal protection, land
+                reclamation, and environmental restoration projects.
+                Besides the above, there are many other applications to which dredging is key. In many
+                place, agriculture depends on irrigation and drainage with the use of canals. Dredging is
+                also often used for infrastructure projects such as road construction. Trenches for pipelines
+                and cables and more, are often aided with the assistance of dredging as well. <br>
+                Our Dredging services include:
+                • Pond and River Dredging
+                • Golf Course and Lake Dredging
+                •Municipal and Industrial Lagoon Dredging
+                • Channel Dredging
+                • Harbor and Manna Dredging
+                • Sand Dredging and Stockpiling
+                • Navigation channels
+                • Drainage canals
+                • Environmental Dredging
+                DREDGE CONTRACTING
+                We provide contracting services in Commercial sand stockpiling for various customers. We
+                also handle land reclamation and beach restoration projects.
+                Dredging Project Consulting
+                We provide design build consulting services, for project owners who need help planning and
+                implementing a portable hydraulic dredging project.
+                Our single source process allows owners to become part of a complete project team,
+                without the responsibility of finding contractors, ordering surveys and applying for permits.
+                Our dredging consulting services include:
+                • Initial dredging project assessment and recommendations
+                • Pre-dredging survey
+                • Dredging project bid and specification writing
+                • Assistance with obtaining dredging permits
+                • Dredging budget and allocation recommendations
+            </p>
+
+            <!-- 2nd para -->
+             <h1 class="text-[#FF8C00] md:text-3xl text-lg font-bold uppercase mt-4">OUR PROCUREMENT SERVICES OVERVIEW</h1>
+             <p class="text-white text-justify md:text-lg text-base mt-4">
+                At PSOVIC OVERFLOW INTL NIGERIA LTD, We have diverse experience in high volume
+                procurement, subcontracting, job shop and services operations.
+                With a wide client base, purchasing management, global souring, material and service cost
+                reductions, supply management consulting, purchasing training and complex foreign and
+                domestic agreement negotiation -we're experienced in all of them.
+                What We Do
+                At PSOVIC OVERFLOW NIGERIA LTD, We develop supply management initiatives that
+                directly impact your bottom line. The result: significant reduction in total cost of ownership
+                from reduced material component and service costs - and improved processes as well.
+                How We Help Your Business Grow: Sustained improvement
+                At PSOVIC OVERFLOW NIGERIA LTD We bring a renewed emphasis to your supply
+                management system. A procurement consultant review, analysis and compares your
+                existing practices to industry standards. Then, we train your employees in current best
+                practices for long-term sustainable supply management imprOvement.
+                What You Can Expect
+                We provide you with these deliverables:
+                • Quick diagnoses of cost reduction opportunities,
+                • Spend profile
+                • Organization assessment
+                • Sourcing strategies
+                • Savings project implementation
+                • Performance measurement methods
+                • Required processes and procedures
+                • Long-term supply management Improvements
+                •Staff training, and
+                • Materials and services cost reductions
+                At PSOVIC OVERFLOW NIGERIA LTD, We present our findings at key points throughout
+                the process. Then we obtain your consensus before moving on to the next phase of the
+                supply management initiative.
+             </p>
+        </div>
+    </article>
+
+
+    <main class="w-full md:py-10 py-5 bg-gray-900"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+        <!-- Table div -->
+       <div class="md:flex md:justify-center md:pt-10 pt-6 pb-0 md:my-8 my-6 overflow-x-auto overflow-y-hidde whitespace-nowrap
+       md:mx-[10%] mx-[5%]  border-2 border-gray-500">
+       <table class="md:border-collapse md:w-[100%] w-[200%] border-2 border-gray-900 p-2 bg-gray-800 text-white">
+         <caption class="md:text-2xl text-lg font-bold uppercase md:text-center text-left md:ml-0 ml-4">Equipment And Work Experience</caption>
+         <thead>
+           <tr>
+             <th class="border-2 border-gray-900 p-3 text-center">S/N</th>
+             <th class="border-2 border-gray-900 p-3 text-center uppercase">Equipment</th>
+             <th class="border-2 border-gray-900 p-3 text-center uppercase">Type</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr class="capitalize">
+             <td class="p-3 text-left border-2 border-gray-900">1</td>
+             <td class="p-3 border-2 border-gray-900 uppercase text-left">ellicott 28"x24" dredge</td>
+             <td class="p-3 border-2 border-gray-900 uppercase text-left">cutter suction</td>
+           </tr>
+           <tr class="capitalize">
+             <td class="p-3 text-left border-2 border-gray-900">2</td>
+             <td class="p-3 border-2 border-gray-900 uppercase text-left">ihc beaver 6518 (26"x26")</td>
+             <td class="p-3 border-2 border-gray-900 uppercase text-left">cutter suction</td>
+           </tr>
+           <tr class="capitalize">
+             <td class="p-3 text-left border-2 border-gray-900">3</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">multicat boat with crane</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">self propelled barge</td>
+           </tr>
+           <tr class="capitalize">
+             <td class="p-3 text-left border-2 border-gray-900">4</td>
+             <td class="p-3 text-left border-2 border-gray-900 ">BULLDOZER (2NOs)</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">d8 caterpillar</td>
+           </tr>
+           <tr class="capitalize">
+             <td class="p-3 text-left border-2 border-gray-900">5</td>
+             <td class="p-3 text-left border-2 border-gray-900 ">PAYLOADERS (2NOs)</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">960 cartepillar</td>
+           </tr>
+           <tr class="capitalize">
+             <td class="p-3 text-left border-2 border-gray-900">6</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">grader</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">12g cartepillar</td>
+           </tr>
+           <tr class="capitalize">
+             <td class="p-3 text-left border-2 border-gray-900">7</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">grader</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">140g cartepillar</td>
+           </tr>
+           <tr class="capitalize">
+             <td class="p-3 text-left border-2 border-gray-900">8</td>
+             <td class="p-3 text-left border-2 border-gray-900 ">TIPPER 20 TON, 30 TON (6NOs)</td>
+             <td class="p-3 text-left border-2 border-gray-900 uppercase ">MARK</td>
+           </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">9</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">roller vibrator</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">dx70</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">10</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">swamp bogey</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">cat 225 excavator</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">11</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">field station survey equipment</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">nikon</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">12</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">steel roller</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">cartepillar</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">13</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">vibro roller</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">bomag</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">14</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">tandem roller</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">tempo</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">15</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">pilling rig 35 ton track crane with hammer</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">american crane</td>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">16</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">forklift</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">cat</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">17</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">electric arc welding machine</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">lincon</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">18</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">wheel loader</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">930 cat</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">19</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">wheel loader</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">936 cat</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">20</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">block moulding machine</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">western machine tools</td>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">21</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">staff bus</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">nissan urvan</td>
+          </tr>
+           <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">22</td>
+            <td class="p-3 text-left border-2 border-gray-900">SELF LOADER (1NOs) </td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">bedford</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">23</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">low bed trailer</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">mack</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">24</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">pipe bending machine</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">western tool</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">25</td>
+            <td class="p-3 text-left border-2 border-gray-900">TIPPING TRAILER (4NOs) </td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">man diesel</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">26</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">water tanker </td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">man diesel</td>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">27</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">chipping spreader</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">phoenix</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">28</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">tar boiler</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">ford / phoenix</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">29</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">small concrete mixer (3no)</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">3 no winget</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">30</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">bitumen tanker</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">bridger</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">31</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">75 kva generating set</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">deuxt</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">32</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">water suction pump</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">yamaha</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">33</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">asphalt paver (finisher)</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">blaw knox 95 / 171</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">34</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">one flat top dumb barge (trans 50)</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">barge</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">35</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">compressors</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">different models</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">36</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">high pressure hoses</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">different models</td>
+          </tr>
+          <tr class="capitalize">
+            <td class="p-3 text-left border-2 border-gray-900">37</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase">jack up barges</td>
+            <td class="p-3 text-left border-2 border-gray-900 uppercase ">different models</td>
+          </tr>
+     </tbody>
+     </table>
+     </div>
+    </main>
+
+    <!-- empty div -->
+    <div class="md:h-6 h-4 w-full bg-[#FF8C00]"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"></div>
+
+
+
+    <!-- go top button -->
+    <button
+      class="go-top-btn fixed md:right-[20px] right-4 md:bottom-[30px] hidden z-10 bottom-5 bg-[#ff8c00] md:w-[40px] w-[30px] md:h-[40px] h-[30px] rounded-full items-center justify-center animate-bounce"
+      onclick="topBtn()"
+    >
+      <i class="fa-solid fa-arrow-up cursor-pointer text-2xl text-black"></i>
+    </button>
+
+    <!-- footer -->
+    <footer class="w-full bg-gray-900 flex flex-col md:py-7 overflow-hidden"> 
+        <div class="md:w-full md:py-5 py-5 md:pl-[10%] pl-[5%] flex md:flex-row flex-col 
+        md:items-center md:gap-8 gap-[] relative"
+                  data-aos="zoom-in"
+                  data-aos-duration="1800"
+                  data-aos-easing="ease-in-out">
+          <h2 class="md:text-xl text-base font-semibold text-white">BUILDING STRONGER,<span class="text-[#FF8C00]"> TOGETHER.</span></h2>
+        <ul class="flex md:flex-row flex-col text-white md:gap-4 gap-3 md:text-xl
+         text-sm font-semibold md:mx-8 md:mt-0 mt-3">
+          <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">ABOUT US</a></li>
+          <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">CONTRACTS</a></li>
+          <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">AWARDS</a></li>
+          <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">EXPERTISE</a></li>
+          <li class="hover:text-[#FF8C00] duration-300 ease-in-out"><a href="">REGIONS</a></li>
+        </ul>
+        <span class="flex flex-row gap-4 md:mt-0 mt-3">
+          <i class="fa-brands fa-square-x-twitter text-white md:text-2xl text-lg cursor-pointer hover:text-[#ff8c00] duration-300 ease-in-out"><a href="#"></a></i>
+        <i class="fa-brands fa-linkedin text-white md:text-2xl text-lg cursor-pointer hover:text-[#ff8c00] duration-300 ease-in-out"><a href="#"></a></i>
+        <i class="fa-brands fa-facebook text-white md:text-2xl text-lg cursor-pointer hover:text-[#ff8c00] duration-300 ease-in-out"><a href="#"></a></i>
+        <i class="fa-brands fa-whatsapp text-white md:text-2xl text-lg cursor-pointer hover:text-[#ff8c00] duration-300 ease-in-out"><a href="#"></a></i>
+        </span>
+        </div>
+      
+      
+        <div class="w-full flex md:flex-row flex-col">
+          <div class="md:w-2/5 flex-col md:pl-[10%] pl-[5%] md:py-[] py-4 text-white"
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                  data-aos-easing="ease-in-out">
+            <h1 class="underline font-bold md:text-lg text-base text-left text-[#ff8c00]">Office Address</h1>
+      
+            <span class="flex flex-row gap-6">
+            <ul class=" md:text-base text-sm">
+              <li>#1 Princeley Chujor Street</li>
+              <li>Obo -- Nwanke</li>
+              <li>Ogale -- Eleme</li>
+              <li>Rivers State</li>
+            </ul>
+            <ul class="md:text-base text-sm">
+              <li>#222, Avalon Haven Drive</li>
+              <li>North Haven</li>
+              <li>CTO6473, USA</li>
+            </ul>
+            </span>
+            <ul class="md:mt-6 mt-4 md:text-base text-sm ">
+              <li>#216c Mbiama/Yenegoa Road</li>
+              <li>Beside NDDC office</li>
+              <li>Yenegoa,</li>
+              <li>Bayelsa State.</li>
+            </ul>
+            
+          </div>
+          <div class="md:w-[30%] text-white md:pt-7 pt-5 md:pl-[] pl-[5%]"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out">
+            <p class="md:text-base text-sm">
+              <strong class="text-[#ff8c00]">Tel:</strong> &nbsp;08156879909, &nbsp; 08036703567, &nbsp; 08116504555, <br>
+              <span class="md:ml-9 ml-8">07031126539, &nbsp; 08162442340.</span>
+            </p>
+            <p class="md:text-base text-sm md:mt-6 mt-4">
+              <strong class="text-[#ff8c00]">Email:</strong> &nbsp;psovic2001@yahoo.com <br>
+              <span class="md:ml-12 ml-10">&nbsp;vbarinua@yahoo.com</span>
+            </p>
+          </div>
+          <div class="md:w-[30%] md:pl-[] pl-[10%] md:py-7 py-4"
+                  data-aos="fade-left"
+                  data-aos-duration="1500"
+                  data-aos-easing="ease-in-out">
+            <ul class="text-white">
+              <li class="list-disc underline hover:text-[#ff8c00] duration-200 ease-in-out my-2"><a href="">Recommendations</a></li>
+              <li class="list-disc underline hover:text-[#ff8c00] duration-200 ease-in-out my-2"><a href="">Engineering Services</a></li>
+              <li class="list-disc underline hover:text-[#ff8c00] duration-200 ease-in-out my-2"><a href="">Jobs | Photos</a></li>
+              <li class="list-disc underline hover:text-[#ff8c00] duration-200 ease-in-out my-2"><a href="">Clients Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
