@@ -66,126 +66,127 @@
 
 <!-- Body -->
 <body class="bg-white relative">
-    <nav
-      class="bg-gray-900 w-full md:pl-[10%] md:pr-[5%] md:py-3 py-4 md:flex md:items-center md:justify-between z-10 fixed top-0"
-    >
+  <nav
+  class="bg-gray-900 w-full md:px-[10%] px-[5%] md:py-3 py-4 md:flex md:items-center md:justify-between z-10 fixed top-0"
+>
+  <div
+    class="flex justify-between items-center md:relative"
+  >
+    <span class="">
+      <a href="index.html">
+        <img
+        src="/photos/logo.png"
+        class="cursor-pointer md:w-[80px] w-[40px] md:ml-0"
+        alt="logo"
+      />
+      </a>
+    </span>
+    <!-- <i class="fa-solid fa-bars mt-2 cursor-pointer text-3xl text-[#1D8AEC] mr-6 md:hidden block"
+       onclick="onToggleMenu(this)" name="menu"></i> -->
+    <ion-icon
+      onclick="onToggleMenu(this)"
+      name="menu"
+      class="text-[40px] text-[#FF8C00] font-bold cursor-pointer md:hidden block"
+    ></ion-icon>
+  </div>
+
+  <ul
+    class="nav-links md:flex md:items-end md:bg-inherit bg-gray-900 md:static md:z-[1] z-[10] absolute
+     md:min-h-fit min-h-[60vh] left-[-100%] top-[] md:pt-0 pt-14 bg-[] w-[80%] md:w-auto 
+     md:py-0 py-4 md:px-0 md:pl-[20%] pl-[5%] ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
+  >
+    <li class="mx-6 md:my-1 md:mt-auto mt-0 relative" id="dropdownBtn">
       <div
-        class="flex justify-between items-center md:pl-1 pl-6 md:pr-0 pr-6 md:relative"
+        class="capitalize text-xl text-[#FF8C00] font-bold hover:text-[#eb5555] duration-300 cursor-pointer"
+        onclick="toggleDropdown()"
       >
-        <span class="">
-          <a href="index.html">
-            <img
-            src="/photos/logo.png"
-            class="cursor-pointer md:w-[80px] w-[80px] md:ml-0 ml-3"
-            alt="logo"
-          />
-          </a>
-        </span>
-        <!-- <i class="fa-solid fa-bars mt-2 cursor-pointer text-3xl text-[#1D8AEC] mr-6 md:hidden block"
-           onclick="onToggleMenu(this)" name="menu"></i> -->
-        <ion-icon
-          onclick="onToggleMenu(this)"
-          name="menu"
-          class="text-[45px] text-[#FF8C00] mr-2 font-bold cursor-pointer md:hidden block"
-        ></ion-icon>
+        About Us
+      <i
+          class="fa-solid fa-chevron-down font-bold text-lg ml-1"
+          id="down"
+        ></i>
+        <i
+          class="fa-solid fa-chevron-up font-bold text-lg ml-1 hidden"
+          id="up"
+        ></i>
       </div>
 
-      <ul
-        class="nav-links md:flex md:items-end md:bg-inherit bg-gray-900 md:static md:z-[1] z-[10] absolute
-         md:min-h-fit min-h-[60vh] left-[-100%] top-[] md:pt-0 pt-14 bg-[] w-[80%] md:w-auto 
-         md:py-0 py-4 md:px-0 md:pl-[20%] pl-[5%] ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
+      <!-- dropdown -->
+      <div
+        class="rounded border border-gray-800 bg-gray-900 absolute top-[] h-auto w-[200px] py-2 shadow-lg hidden 
+        ease-in-out duration-300 text-[#FF8C00]"
+        id="dropdown"
       >
-        <li class="mx-6 md:my-1 md:mt-auto mt-0 relative" id="dropdownBtn">
-          <div
-            class="capitalize text-xl text-[#FF8C00] font-bold hover:text-[#eb5555] duration-300 cursor-pointer"
-            onclick="toggleDropdown()"
-          >
-            About Us
-          <i
-              class="fa-solid fa-chevron-down font-bold text-lg ml-1"
-              id="down"
-            ></i>
-            <i
-              class="fa-solid fa-chevron-up font-bold text-lg ml-1 hidden"
-              id="up"
-            ></i>
-          </div>
-
-          <!-- dropdown -->
-          <div
-            class="rounded bg-gray-900 border border-gray-800 absolute top-[] h-auto w-[200px] py-2 shadow-lg hidden ease-in-out duration-300 text-[#FF8C00]"
-            id="dropdown"
-          >
-            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
-              <a href="company-overview.html">
-                Company Overview
-              </a>
-            </div>
-            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
-              <a href="biodata.html">
-                Company Bio-Data
-              </a>
-            </div>
-            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
-                <a href="certificates.html">
-              Certificates
-                </a>
-            </div>
-            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
-              <a href="certificates.html">
-                Company Awards
-              </a>
-            </div>
-            <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
-              <a href="executed-jobs.html">
-                Executed Jobs
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="mx-6 md:my-1 my-10">
-          <a
-            class="capitalize text-[#FF8C00] text-xl font-bold hover:text-[#eb5555] duration-300"
-            href="engineering-services.html"
-            >Engineering Services</a
-          >
-        </li>
-        <li class="mx-6 md:my-1 my-10">
-          <a
-            class="capitalize text-xl text-[#FF8C00] font-bold hover:text-[#eb5555] duration-300"
-            href=""
-            >Recommendations</a
-          >
-        </li>
-        <li class="mx-6 md:my-1 my-10">
-          <a
-            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
-            href="contact.html"
-            ><i class="fa-solid fa-phone"></i> Contact Us</a
-          >
-        </li>
-        <li class="mx-6 md:my-1 my-10 md:hidden">
-          <a
-            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
-            href="#"
-          >
-            Key Personel</a
-          >
-        </li>
-        <li class="mx-6 md:my-1 my-10 md:hidden">
-          <a
-            class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
-            href="#"
-            >Procurement Overview</a
-          >
-        </li>
-      </ul>
-    </nav>
+        <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+          <a href="company-overview.html">
+            Company Overview
+          </a>
+        </div>
+        <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+          <a href="biodata.html">
+            Company Bio-Data
+          </a>
+        </div>
+        <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+          <a href="certificates.html">
+        Certificates
+          </a>
+      </div>
+      <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+        <a href="certificates.html">
+          Company Awards
+        </a>
+      </div>
+        <div class="hover:cursor-pointer hover:bg-gray-300 px-3 py-2">
+          <a href="executed-jobs.html">
+            Executed Jobs
+          </a>
+        </div>
+      </div>
+    </li>
+    <li class="mx-6 md:my-1 my-10">
+      <a
+        class="capitalize text-[#FF8C00] text-xl font-bold hover:text-[#eb5555] duration-300"
+        href="engineering-services.html"
+        >Engineering Services</a
+      >
+    </li>
+    <li class="mx-6 md:my-1 my-10">
+      <a
+        class="capitalize text-xl text-[#FF8C00] font-bold hover:text-[#eb5555] duration-300"
+        href=""
+        >Recommendations</a
+      >
+    </li>
+    <li class="mx-6 md:my-1 my-10">
+      <a
+        class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+        href="contact.html"
+        ><i class="fa-solid fa-phone"></i> Contact Us</a
+      >
+    </li>
+    <li class="mx-6 md:my-1 my-10 md:hidden">
+      <a
+        class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+        href="#"
+      >
+        Key Personel</a
+      >
+    </li>
+    <li class="mx-6 md:my-1 my-10 md:hidden">
+      <a
+        class="capitalize text-xl font-bold text-[#FF8C00] hover:text-[#eb5555] duration-300"
+        href="#"
+        >Procurement Overview</a
+      >
+    </li>
+  </ul>
+</nav>
 
 <!-- overlay -->
 <div class="overlay hidden"></div>    
 
-<section class="w-full flex flex-col md:pt-20 pt-36">
+<section class="w-full flex flex-col md:pt-20 pt-24">
     <div class="w-full flex flex-col md:pl-[5%] px-[5%] relative"
     data-aos="fade-down"
     data-aos-duration="1500"
