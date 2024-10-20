@@ -205,48 +205,72 @@
           send a message
         </h1>
         <!-- form -->
-        <form action="GET" class="md:pt-5 pt-4">
+        <form class="md:pt-5 pt-4" onsubmit="return validateForm()">
           <h2 class="font-semibold">Name</h2>
           <input
             type="text"
             placeholder="FIRST NAME"
+            name="name"
             required
+            id="firstname"
             class="md:w-[45%] w-full md:h-10 h-12 border border-gray-500 mt-2 pl-2"
           />
           <br class="md:hidden block" />
           <input
             type="text"
             placeholder="LAST NAME"
+            name="lastname"
             required
+            id="lastname"
             class="md:w-[45%] w-full md:h-10 h-12 border border-gray-500 md:mt-2 mt-6 pl-2 md:ml-[70px]"
           />
+          <h3 class="error-hint text-red-400 hidden">
+            please put ur first name
+          </h3>
+
           <h2 class="font-semibold md:mt-3 mt-6">Email</h2>
           <input
             type="email"
             name="email"
-            id=""
+            required
+            id="email"
             class="w-full md:h-10 h-12 border border-gray-500 mt-2 pl-2"
             placeholder="EMAIL ADDRESS"
-            required
           />
           <h2 class="font-semibold md:mt-3 mt-6">Message</h2>
           <!-- <input type="text" placeholder="ENTER YOUR MESSAGE" id="full-message" rows="5" col="10"
              class="md:w-full border border-gray-500 md:mt-2 md:px-2 relative pb-36 break-words text-wrap"> -->
           <textarea
             name="message"
+            required
             id="multi-line"
             placeholder="ENTER YOUR MESSAGE"
-            required
             cols="20"
             class="w-full border border-gray-500 mt-2 px-2 pt-2 break-words text-wrap md:h-[40vh] h-[30vh]"
           ></textarea>
+          <div id="errorMessages" class="error"></div>
           <input
-            type="button"
+            type="submit"
             value="submit"
             class="uppercase md:py-3 py-4 px-6 md:mt-1 mt-3 rounded-sm bg-[#FF8C00] font-bold md:text-lg md:my-3 hover:bg-[#ff8c00be] cursor-pointer duration-300"
           />
         </form>
       </div>
+
+      <script>
+        const form = document.querySelector("form");
+        const firstName = document.querySelector('input[name="name"]');
+        const validateFirstName = () => {
+          if (!firstName.value) {
+            firstName.nextElementSibling.classList.remove("hidden");
+          }
+        };
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          validateFirstName();
+        });
+      </script>
 
       <!-- 2nd div -->
       <div
